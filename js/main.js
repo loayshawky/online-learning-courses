@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    canonical.setAttribute("href", window.location.href);
+    document.head.appendChild(canonical);
+});
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/js/sw.js")
     .then(() => console.log("Service Worker Registered"))
