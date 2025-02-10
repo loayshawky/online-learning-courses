@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://loayshawky.github.io/online-learning-courses/sitemap.xml
